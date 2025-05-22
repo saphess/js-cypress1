@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:desktop:firefox": "cypress run --env device=desktop --browser firefox",
+    "cy:mobile:firefox": "cypress run --env device=mobile --browser firefox",
+    "cy:desktop:headed": "cypress run --env device=desktop --browser edge --headed",
+    "cy:mobile:headed": "cypress run --env device=mobile --browser edge"
   },
   "keywords": [],
   "author": "",
